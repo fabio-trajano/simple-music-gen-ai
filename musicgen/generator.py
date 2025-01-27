@@ -4,7 +4,12 @@ import numpy as np
 
 def generate_music(prompt, output_file="my_music"):
     """Generate music from a text prompt."""
-    music_pipe = pipeline("text-to-audio", model="facebook/musicgen-small")
+    music_pipe = pipeline(
+        "text-to-audio",
+        model="facebook/musicgen-small",
+        model_kwargs={"attn_implementation": "eager"},
+        device=-1
+    )
     music = music_pipe(prompt)
     audio = music["audio"]
     sample_rate = music["sampling_rate"]
