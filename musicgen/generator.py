@@ -2,7 +2,7 @@ from transformers import pipeline
 import scipy.io.wavfile as wavfile
 import numpy as np
 
-def generate_music(prompt, output_file="musicgen.wav"):
+def generate_music(prompt, output_file="my_music"):
     """Generate music from a text prompt."""
     music_pipe = pipeline("text-to-audio", model="facebook/musicgen-small")
     music = music_pipe(prompt)
