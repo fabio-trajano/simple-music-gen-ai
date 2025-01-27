@@ -21,8 +21,8 @@ An AI-powered music generation tool that creates audio tracks from simple text d
 ## **Usage**
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/ai-music-generator.git
-cd ai-music-generator
+git clone https://github.com/fabio-trajano/simple-music-gen-ai.git
+cd simple-music-gen-ai
 ```
 
 ### **2. Install Dependencies**
