@@ -16,4 +16,4 @@ def generate_music(prompt, output_file="my_music"):
 
     # Save as WAV file
     wavfile.write(output_file + ".wav", rate=sample_rate, data=np.array(audio, dtype=np.float32))
-    print(f"Music saved as '{output_file}'.wav")
+    print(f"Music saved as '{output_file}'.wav based on the prompt '{prompt}'.")
